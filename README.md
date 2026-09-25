@@ -86,30 +86,6 @@ Buka peramban di `http://localhost:5173/`.
 
 ---
 
-## 🌐 Deploy ke GitHub Pages
-
-Proyek ini telah dikonfigurasi dengan `base: './'` pada `vite.config.js` dan siap di-*deploy* melalui dua cara:
-
-### Cara 1: Otomatis via GitHub Actions (Rekomendasi)
-Workflow file telah tersedia di `.github/workflows/deploy.yml`. Cukup push kode ke branch `main`:
-1. Buat repository baru di GitHub dan tambahkan remote:
-   ```bash
-   git remote add origin https://github.com/USERNAME/REPO_NAME.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. Buka repository di GitHub: **Settings** > **Pages** > pada bagian **Build and deployment**, pilih **Source: GitHub Actions**.
-3. Setiap kali Anda melakukan push ke `main`, GitHub Actions akan otomatis mem-build dan men-deploy situs Anda!
-
-### Cara 2: Manual Menggunakan package `gh-pages`
-Jika ingin deploy langsung dari terminal komputer Anda:
-```bash
-npm run deploy
-```
-Perintah ini akan menjalankan `vite build` dan mengunggah folder `dist` ke branch `gh-pages`.
-
----
-
 ## 🧪 Validasi Pengujian
 
 Proyek ini dilengkapi dengan *automated test suite* yang memvalidasi hasil perhitungan algoritma terhadap seluruh contoh soal modul kuliah:
@@ -129,10 +105,3 @@ Output:
 TOTAL TESTS: 39 | PASSED: 39 | FAILED: 0
 ALL TESTS PASSED WITH 100% ACCURACY! 🎉
 ```
-
----
-
-## 📚 Lisensi & Sumber Referensi
-1. Donald Hearn, M. Pauline Baker, *Computer Graphics*, Prentice Hall.
-2. Glenn W. Rowe, *Computer Graphics with Java*, Palgrave.
-3. Modul Praktikum Grafika Komputer (Pertemuan II: Output Primitif I & Pertemuan III: Output Primitif II).
