@@ -242,22 +242,20 @@ export default function App() {
               <div className="flex items-center gap-2 border-b border-slate-800 pb-2 no-print">
                 <button
                   onClick={() => setTableTab('main')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-medium flex items-center gap-1.5 transition-colors ${
-                    tableTab === 'main'
+                  className={`px-3 py-1.5 rounded-xl text-xs font-medium flex items-center gap-1.5 transition-colors ${tableTab === 'main'
                       ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
                       : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800'
-                  }`}
+                    }`}
                 >
                   <FileSpreadsheet className="w-3.5 h-3.5" />
                   <span>Tabel Iterasi Modul</span>
                 </button>
                 <button
                   onClick={() => setTableTab('symmetry')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-medium flex items-center gap-1.5 transition-colors ${
-                    tableTab === 'symmetry'
+                  className={`px-3 py-1.5 rounded-xl text-xs font-medium flex items-center gap-1.5 transition-colors ${tableTab === 'symmetry'
                       ? 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
                       : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800'
-                  }`}
+                    }`}
                 >
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>
@@ -292,9 +290,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4">
           <p>
             Kalkulator Grafika Komputer & Pengolahan Citra — Dibuat untuk mempermudah pengerjaan dan verifikasi tugas mandiri.
-          </p>
-          <p className="mt-1 text-[11px] text-slate-600 font-mono">
-            Client-Side Only • Siap Deploy ke GitHub Pages
           </p>
         </div>
       </footer>
